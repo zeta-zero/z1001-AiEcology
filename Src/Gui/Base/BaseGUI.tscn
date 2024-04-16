@@ -1,0 +1,162 @@
+[gd_scene load_steps=8 format=3 uid="uid://b60vmryohvuas"]
+
+[ext_resource type="FontFile" uid="uid://bp1x3bqglhnj7" path="res://Src/Font/Sources/SourceHanSansSC-Bold.otf" id="1_g0iji"]
+[ext_resource type="Script" path="res://Src/Gui/Base/Script/BaseGUI.cs" id="2_rxtmg"]
+[ext_resource type="Script" path="res://Src/Gui/Base/Script/ButtonGroup.cs" id="3_77msv"]
+[ext_resource type="Script" path="res://Src/Gui/Base/Script/InfoGridContainer.cs" id="4_ll56p"]
+[ext_resource type="Script" path="res://Src/Gui/Base/Script/ButtonMenu.cs" id="5_wifhj"]
+
+[sub_resource type="Theme" id="Theme_npyqa"]
+default_font = ExtResource("1_g0iji")
+default_font_size = 18
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_2i862"]
+allow_unpress = true
+
+[node name="BaseGUI" type="Control" node_paths=PackedStringArray("LocalBtnGroup", "LocalBtnMenu")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_npyqa")
+script = ExtResource("2_rxtmg")
+LocalBtnGroup = NodePath("MarginContainer/ButtonGroupHBoxContainer")
+LocalBtnMenu = NodePath("MenuPanelContainer")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ButtonGroupHBoxContainer" type="HBoxContainer" parent="MarginContainer" node_paths=PackedStringArray("SettingButton", "Rate1Button", "Rate5Button", "RateMaxButton", "StopButton")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 10
+script = ExtResource("3_77msv")
+SettingButton = NodePath("SettingButton")
+Rate1Button = NodePath("Rate1Button")
+Rate5Button = NodePath("Rate5Button")
+RateMaxButton = NodePath("RateMaxButton")
+StopButton = NodePath("StopButton")
+
+[node name="SettingButton" type="Button" parent="MarginContainer/ButtonGroupHBoxContainer"]
+layout_mode = 2
+text = "  Setting  "
+icon_alignment = 1
+text_direction = 1
+
+[node name="Rate1Button" type="Button" parent="MarginContainer/ButtonGroupHBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2i862")
+text = "  1X  "
+
+[node name="Rate5Button" type="Button" parent="MarginContainer/ButtonGroupHBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2i862")
+text = "  5X  "
+
+[node name="RateMaxButton" type="Button" parent="MarginContainer/ButtonGroupHBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2i862")
+text = "  Max>>  "
+
+[node name="StopButton" type="Button" parent="MarginContainer/ButtonGroupHBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+button_group = SubResource("ButtonGroup_2i862")
+text = "  Stop  "
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+color = Color(0.862745, 0.862745, 0.862745, 0.392157)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 6
+
+[node name="InfoGridContainer" type="GridContainer" parent="MarginContainer/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/h_separation = 12
+columns = 3
+script = ExtResource("4_ll56p")
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/InfoGridContainer"]
+layout_mode = 2
+text = "Icon"
+
+[node name="Label2" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/InfoGridContainer"]
+layout_mode = 2
+text = "Name"
+
+[node name="Label3" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/InfoGridContainer"]
+layout_mode = 2
+text = "Value"
+
+[node name="MenuPanelContainer" type="PanelContainer" parent="." node_paths=PackedStringArray("ContinueButton", "SettingButton", "ExitToMenuButton", "ExitButton")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_wifhj")
+ContinueButton = NodePath("MenuVBoxContainer/ContinuekButton")
+SettingButton = NodePath("MenuVBoxContainer/SettingButton")
+ExitToMenuButton = NodePath("MenuVBoxContainer/ExitToMenuButton")
+ExitButton = NodePath("MenuVBoxContainer/ExitButton")
+
+[node name="MenuVBoxContainer" type="VBoxContainer" parent="MenuPanelContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 12
+
+[node name="ContinuekButton" type="Button" parent="MenuPanelContainer/MenuVBoxContainer"]
+layout_mode = 2
+text = "Continue"
+
+[node name="SettingButton" type="Button" parent="MenuPanelContainer/MenuVBoxContainer"]
+layout_mode = 2
+text = "Setting"
+
+[node name="Label" type="Label" parent="MenuPanelContainer/MenuVBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "- Exit -"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitToMenuButton" type="Button" parent="MenuPanelContainer/MenuVBoxContainer"]
+layout_mode = 2
+text = "Menu"
+
+[node name="ExitButton" type="Button" parent="MenuPanelContainer/MenuVBoxContainer"]
+layout_mode = 2
+text = "Exit To Desktop
+"

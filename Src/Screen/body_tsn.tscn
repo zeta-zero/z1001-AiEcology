@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://cml7ugnxl0jbp"]
+
+[ext_resource type="Script" path="res://Src/Screen/Script/body_tsn.cs" id="1_8ywtk"]
+[ext_resource type="PackedScene" uid="uid://b60vmryohvuas" path="res://Src/Gui/Base/BaseGUI.tscn" id="2_0lcm0"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_4qxie"]
+b = Vector2(2500, 0)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_pxrfp"]
+b = Vector2(2500, 0)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_natyi"]
+b = Vector2(0, 1700)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_8bkm6"]
+b = Vector2(0, 1700)
+
+[node name="BodyTSN" type="Node2D"]
+script = ExtResource("1_8ywtk")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(2500, 1700)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1250.0
+offset_top = -850.0
+offset_right = 1250.0
+offset_bottom = 850.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.784314, 0.784314, 0.784314, 1)
+
+[node name="BoundaryNode" type="Node2D" parent="."]
+position = Vector2(-1250, -850)
+
+[node name="UpStaticBody2D" type="StaticBody2D" parent="BoundaryNode"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoundaryNode/UpStaticBody2D"]
+shape = SubResource("SegmentShape2D_4qxie")
+
+[node name="DownStaticBody2D" type="StaticBody2D" parent="BoundaryNode"]
+position = Vector2(0, 1700)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoundaryNode/DownStaticBody2D"]
+shape = SubResource("SegmentShape2D_pxrfp")
+
+[node name="LefStaticBody2D" type="StaticBody2D" parent="BoundaryNode"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoundaryNode/LefStaticBody2D"]
+shape = SubResource("SegmentShape2D_natyi")
+
+[node name="RightStaticBody2D" type="StaticBody2D" parent="BoundaryNode"]
+position = Vector2(2500, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoundaryNode/RightStaticBody2D"]
+shape = SubResource("SegmentShape2D_8bkm6")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="MainCamera2D" type="Camera2D" parent="."]
+limit_left = -2000
+limit_top = -1500
+limit_right = 2000
+limit_bottom = 1500
+limit_smoothed = true
+
+[node name="BaseGUI" parent="MainCamera2D" instance=ExtResource("2_0lcm0")]
+offset_left = -683.0
+offset_top = -384.0
+offset_right = 683.0
+offset_bottom = 384.0

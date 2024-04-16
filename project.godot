@@ -11,9 +11,20 @@ config_version=5
 [application]
 
 config/name="z1001-AiEcology"
-config/features=PackedStringArray("4.2", "Forward Plus")
+run/main_scene="res://Src/Screen/node_2d.tscn"
+config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1366
+window/size/viewport_height=768
+window/size/resizable=false
 
 [dotnet]
 
 project/assembly_name="z1001-AiEcology"
+
+[internationalization]
+
+locale/locale_filter_mode=0

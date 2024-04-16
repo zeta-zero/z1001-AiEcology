@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|c:\\users\\zhangp\\desktop\\workbyzpw\\git\\z1001-aiecology\\src\\screen\\script\\body_tsn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|solutionrelative:src\\screen\\script\\body_tsn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\BaseGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Src\\Gui\\Base\\Script\\BaseGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|c:\\users\\zhangp\\desktop\\workbyzpw\\git\\z1001-aiecology\\src\\gui\\base\\script\\buttongroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|solutionrelative:src\\gui\\base\\script\\buttongroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|c:\\users\\zhangp\\desktop\\workbyzpw\\git\\z1001-aiecology\\src\\gui\\base\\script\\buttonmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|solutionrelative:src\\gui\\base\\script\\buttonmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|c:\\users\\zhangp\\desktop\\workbyzpw\\git\\z1001-aiecology\\src\\gui\\base\\script\\infogridcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331F69A8-1652-4F1C-A822-A0E169880407}|z1001-AiEcology.csproj|solutionrelative:src\\gui\\base\\script\\infogridcontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "body_tsn.cs",
+              "DocumentMoniker": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Screen\\SCript\\body_tsn.cs",
+              "RelativeDocumentMoniker": "Src\\Screen\\SCript\\body_tsn.cs",
+              "ToolTip": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Screen\\SCript\\body_tsn.cs",
+              "RelativeToolTip": "Src\\Screen\\SCript\\body_tsn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T09:02:11.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseGUI.cs",
+              "DocumentMoniker": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\BaseGUI.cs",
+              "RelativeDocumentMoniker": "Src\\Gui\\Base\\Script\\BaseGUI.cs",
+              "ToolTip": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\BaseGUI.cs",
+              "RelativeToolTip": "Src\\Gui\\Base\\Script\\BaseGUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T07:44:17.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ButtonMenu.cs",
+              "DocumentMoniker": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\ButtonMenu.cs",
+              "RelativeDocumentMoniker": "Src\\Gui\\Base\\Script\\ButtonMenu.cs",
+              "ToolTip": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\ButtonMenu.cs",
+              "RelativeToolTip": "Src\\Gui\\Base\\Script\\ButtonMenu.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T07:40:52.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ButtonGroup.cs",
+              "DocumentMoniker": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\ButtonGroup.cs",
+              "RelativeDocumentMoniker": "Src\\Gui\\Base\\Script\\ButtonGroup.cs",
+              "ToolTip": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\ButtonGroup.cs",
+              "RelativeToolTip": "Src\\Gui\\Base\\Script\\ButtonGroup.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAswFwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T07:27:44.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InfoGridContainer.cs",
+              "DocumentMoniker": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\InfoGridContainer.cs",
+              "RelativeDocumentMoniker": "Src\\Gui\\Base\\Script\\InfoGridContainer.cs",
+              "ToolTip": "C:\\Users\\zhangp\\Desktop\\workbyzpw\\Git\\z1001-AiEcology\\Src\\Gui\\Base\\Script\\InfoGridContainer.cs",
+              "RelativeToolTip": "Src\\Gui\\Base\\Script\\InfoGridContainer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T06:26:29.16Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
